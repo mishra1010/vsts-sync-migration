@@ -84,7 +84,7 @@ namespace VstsSyncMigrator.Engine
         {
             if (config.OnlyElementsWithTag == null)
             {
-                return true;
+                return false;
             }
             var sourcePlanWorkItem = sourceWitStore.Store.GetWorkItem(workItemId);
             var tagWhichMustBePresent = config.OnlyElementsWithTag;
